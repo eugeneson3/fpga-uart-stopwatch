@@ -1,0 +1,10 @@
+src/btn_debounce.v
+src/control_unit.v
+src/demux_1x2.v
+src/stopwatch.v
+src/watch.v
+src/ascii_decoder.v
+src/fnd_controller.v
+src/uart.v
+src/uart_loop_back.v
+src/top_watch_stopwatch.v

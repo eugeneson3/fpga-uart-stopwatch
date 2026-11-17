@@ -1,0 +1,75 @@
+{
+  "snapshot_date": "2026-11-18",
+  "files": [
+    {
+      "path": "src/btn_debounce.v",
+      "source": "Sources/projects/stopwatch_watch_basic/src/btn_debounce.v",
+      "sha256": "89cbbaa800378871d66f9b036149ba73e8582dc7b222002a307216548baf0509"
+    },
+    {
+      "path": "docs/original-control_unit.v",
+      "source": "Sources/projects/stopwatch_watch_basic/src/control_unit.v",
+      "sha256": "37edf50593e7e2ebcbed48ca76138035ce35fcd2cccae5f1d49b5f97d256fb9e"
+    },
+    {
+      "path": "src/demux_1x2.v",
+      "source": "Sources/projects/stopwatch_watch_basic/src/demux_1x2.v",
+      "sha256": "abbe8cef88e5a9d61d73d0f8232edebd2b0796e9de106da0cf86e5bf5a4c53ad"
+    },
+    {
+      "path": "src/stopwatch.v",
+      "source": "Sources/projects/stopwatch_watch_basic/src/stopwatch.v",
+      "sha256": "b5b7eec16fa2d4416fb8c43e836720cb9358218845dd48ed4918c44c91dce94a"
+    },
+    {
+      "path": "src/watch.v",
+      "source": "Sources/projects/stopwatch_watch_basic/src/watch.v",
+      "sha256": "eb142efb01ad88394e0c865bf0d91feef39d584390955111aabf558f3a369ebb"
+    },
+    {
+      "path": "src/ascii_decoder.v",
+      "source": "Sources/projects/uart_sensor_stopwatch_current/src/ascii_decoder.v",
+      "sha256": "8b302a11ed6906f2d7a7942a61280b6e4675edce3248356779ee8d5d78fdde16"
+    },
+    {
+      "path": "src/fnd_controller.v",
+      "source": "Sources/projects/uart_stopwatch/src/fnd_controller.v",
+      "sha256": "b743c586198ed68c94b3a9192a6ba5d15f49f1d5a60405fac17bf3381bb17bbc"
+    },
+    {
+      "path": "src/uart.v",
+      "source": "Sources/projects/uart_stopwatch/src/uart.v",
+      "sha256": "945432e1a6b7bb1e12cc73595d917ce5b790f59726f71a28974cb872b3680b9f"
+    },
+    {
+      "path": "src/uart_loop_back.v",
+      "source": "Sources/projects/uart_stopwatch/src/uart_loop_back.v",
+      "sha256": "64de7deff4e042e96412bce78e091d338049f273ff072dbd8f3ea46630b47305"
+    },
+    {
+      "path": "src/top_watch_stopwatch.v",
+      "source": "Sources/projects/uart_stopwatch/src/top_watch_stopwatch.v",
+      "sha256": "43f6c7c03178af16ac9a3da7e92da4aecec22296938c8322f0d313537a5936f2"
+    },
+    {
+      "path": "sim/tb_uart_stopwatch.v",
+      "source": "sim/tb_uart_stopwatch.v",
+      "sha256": "d57b836fff0f47d2f43c63d2fa2735d614bb662d3ac70d3de46e6bb553610b18"
+    },
+    {
+      "path": "constraints/constraint_TeamPJ.xdc",
+      "source": "constraints/constraint_TeamPJ.xdc",
+      "sha256": "afe63a41ec7a096e2f98d38970b8f347cc5ce41f041b0fa4c7ab197cd07f3c58"
+    },
+    {
+      "path": "constraints/Basys-3-Master.xdc",
+      "source": "constraints/Basys-3-Master.xdc",
+      "sha256": "ce50cb375e51e4bccbaaf1dad578b8d19d7e3dd435263d434e1bc749959a8d48"
+    },
+    {
+      "path": "src/control_unit.v",
+      "source": "Sources/projects/uart_sensor_stopwatch_current/src/control_unit.v",
+      "sha256": "693f6a06ca55ae1af6dad1c30bc8607c18b7deea24187d12af5d922b11d934e1"
+    }
+  ]
+}

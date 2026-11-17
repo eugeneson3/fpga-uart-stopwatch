@@ -1,0 +1,97 @@
+pyslang 12.1.0
+Top top_watch_stopwatch
+Default timescale 1ns/1ps
+Errors 0
+
+src\control_unit.v:39:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\control_unit.v:40:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            NORMAL: begin
+            ^~~~~~
+src\control_unit.v:44:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            HOUR: begin
+            ^~~~
+src\control_unit.v:48:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            MIN: begin
+            ^~~
+src\control_unit.v:52:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            SEC : begin
+            ^~~
+src\control_unit.v:77:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\control_unit.v:78:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            NORMAL: begin
+            ^~~~~~
+src\control_unit.v:83:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            HOUR: begin
+            ^~~~
+src\control_unit.v:88:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            MIN: begin
+            ^~~
+src\control_unit.v:93:13: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+            SEC: begin
+            ^~~
+src\control_unit.v:153:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      STOP: begin
+      ^~~~
+src\control_unit.v:167:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      RUN: begin
+      ^~~
+src\control_unit.v:175:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      CLEAR: begin
+      ^~~~~
+src\control_unit.v:179:7: warning: comparison of different types in 'case' statement ('logic signed[31:0]' and 'reg[1:0]') [-Wcase-type]
+      MODE: begin
+      ^~~~
+src\control_unit.v:186:10: warning: no newline at end of file [-Wnewline-eof]
+endmodule
+         ^
+src\stopwatch.v:182:21: warning: implicit net 'w_tick_msec' created [-Wimplicit-net]
+        .i_tick    (w_tick_msec),
+                    ^
+  in instance: top_watch_stopwatch.U_STOPWATCH_DATAPATH.U_TICK_GEN_100HZ
+src\stopwatch.v:225:29: warning: comparison of differently signed types ('reg[19:0]' and 'logic signed[31:0]') [-Wsign-compare]
+            if (counter_reg == (F_COUNT - 1)) begin
+                ~~~~~~~~~~~ ^~  ~~~~~~~~~~~
+  in 3 instances, e.g. top_watch_stopwatch.U_STOPWATCH_DATAPATH.U_MSEC_COUNTER
+src\stopwatch.v:256:37: warning: comparison of differently signed types ('reg[6:0]' and 'logic signed[31:0]') [-Wsign-compare]
+                    if (counter_reg == (TIMES - 1)) begin
+                        ~~~~~~~~~~~ ^~  ~~~~~~~~~
+src\watch.v:147:10: warning: input port 'i_count_up' is explicitly connected to nothing [-Wempty-input-connection]
+        .i_count_up(),
+         ^~~~~~~~~~
+src\watch.v:148:10: warning: input port 'i_count_down' is explicitly connected to nothing [-Wempty-input-connection]
+        .i_count_down(),
+         ^~~~~~~~~~~~
+src\watch.v:195:10: warning: output port 'o_tick' is explicitly connected to nothing [-Wempty-output-connection]
+        .o_tick()
+         ^~~~~~
+  in 3 instances, e.g. top_watch_stopwatch.U_WATCH_DATAPATH.U_HOUR_COUNTER
+src\watch.v:264:36: warning: comparison of differently signed types ('reg[4:0]' and 'logic signed[31:0]') [-Wsign-compare]
+                if (reg_time_count == (TIMES - 1)) begin
+                    ~~~~~~~~~~~~~~ ^~  ~~~~~~~~~
+  in 3 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_HOUR
+src\fnd_controller.v:245:23: warning: implicit conversion truncates from 32 to 4 bits [-Wwidth-trunc]
+    assign digit_1  = ds_in % 10;
+                    ~ ^~~~~~~~~~
+  in 3 instances, e.g. top_watch_stopwatch.U_WATCH_FND_CONTROLLER.U_DIGIT_SPLITER_HOUR
+src\fnd_controller.v:246:23: warning: implicit conversion truncates from 32 to 4 bits [-Wwidth-trunc]
+    assign digit_10 = (ds_in / 10) % 10;
+                    ~ ^~~~~~~~~~~~~~~~~
+src\uart.v:243:9: warning: 'case' missing 'default' label [-Wcase-default]
+        case (c_state)
+        ^~~~
+src\uart.v:328:44: warning: comparison of differently signed types ('reg[9:0]' and 'logic signed[31:0]') [-Wsign-compare]
+    assign counter_next = (counter_current == (tick_count - 1))? 0 : counter_current + 1;
+                           ~~~~~~~~~~~~~~~ ^~  ~~~~~~~~~~~~~~
+src\uart.v:329:43: warning: comparison of differently signed types ('reg[9:0]' and 'logic signed[31:0]') [-Wsign-compare]
+    assign o_baud_tick = (counter_current == (tick_count - 1)) ? 1 : 0;
+                          ~~~~~~~~~~~~~~~ ^~  ~~~~~~~~~~~~~~
+src\uart_loop_back.v:31:10: warning: output port 'tx_busy' is explicitly connected to nothing [-Wempty-output-connection]
+        .tx_busy(),
+         ^~~~~~~
+src\uart_loop_back.v:32:10: warning: output port 'tx_done' is explicitly connected to nothing [-Wempty-output-connection]
+        .tx_done(),
+         ^~~~~~~
